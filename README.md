@@ -1,37 +1,37 @@
 # QR Code Generator Pro
 
-Um gerador de QR Code premium, construído com PHP e JavaScript, que oferece personalização avançada e suporte à inserção de logotipos centrais (incluindo vetores SVG).
+A premium QR Code generator built with PHP and JavaScript that offers advanced customization and native support for inserting central logos (including SVG vectors).
 
-## 🚀 Funcionalidades
+## 🚀 Features
 
-- **Conteúdo Personalizado:** Suporta textos longos ou URLs.
-- **Tipos de Módulos:** Escolha entre módulos quadrados (padrão) ou circulares.
-- **Nível de Correção de Erros (ECC):** Permite selecionar a complexidade (Low, Medium, Quartile, High - recomendado para uso com logotipos).
-- **Densidade/Escala:** Ajuste o tamanho do QR Code gerado de 100 a 2000.
-- **Logotipo Central:** Faça upload do seu logotipo em formato `PNG`, `JPEG` ou até mesmo em vetor `SVG` para deixá-lo centralizado no QR Code de forma nativa e alinhada à grade.
-- **Geração Múltipla:** Gera os formatos `SVG` (vetor de alta qualidade) e `PNG` simultaneamente.
-- **Downloads Rápidos:** Botões para baixar facilmente o formato desejado após a geração.
+- **Custom Content:** Supports long texts or URLs.
+- **Module Types:** Choose between square (default) or circular modules.
+- **Error Correction Level (ECC):** Select the complexity (Low, Medium, Quartile, High - recommended when using logos).
+- **Density/Scale:** Adjust the generated QR Code size from 100 to 2000.
+- **Central Logo:** Upload your logo in `PNG`, `JPEG`, or even `SVG` vector format to natively embed and perfectly align it to the QR grid.
+- **Multiple Formats:** Generates `SVG` (high-quality vector) and `PNG` simultaneously.
+- **Quick Downloads:** Buttons to easily download your desired format right after generation.
 
-## 🛠️ Como Usar
+## 🛠️ How to Use
 
-1. **Acesse a aplicação:** Abra o arquivo `index.php` em um servidor local (ex: Laragon, XAMPP) ou no seu servidor de hospedagem que suporte PHP.
-2. **Conteúdo:** No campo "Conteúdo (Texto ou URL)", insira o link ou o texto que deseja codificar.
-3. **Personalização visual:**
-   - **Tipo de Módulo:** Selecione entre Quadrado ou Circular.
-   - **Complexidade (ECC):** Por padrão, fica em Alta (High). Isso garante que o QR Code será lido mesmo com um logotipo central cobrindo uma parte dele.
-   - **Densidade (Escala):** Controle as dimensões base do QR Code ajustando este valor.
-4. **Logotipo (Opcional):** Clique em "Escolher arquivo" na seção "Logotipo Central" para adicionar sua marca. O sistema suporta formatos tradicionais e `SVG` mantendo a transparência e qualidade.
-5. **Gerar:** Clique no botão **GERAR QR CODES**.
-6. **Visualização e Download:** O sistema vai exibir as pré-visualizações em Vetor (SVG) e Imagem (PNG). Basta clicar nos botões de download correspondentes logo abaixo para salvar os arquivos gerados.
+1. **Access the application:** Open the `index.php` file on a local server (e.g., Laragon, XAMPP) or on your web host that supports PHP.
+2. **Content:** In the "Conteúdo (Texto ou URL)" field, enter the link or text you want to encode.
+3. **Visual Customization:**
+   - **Type of Module:** Select between Square or Circular.
+   - **Complexity (ECC):** Set to High by default. This ensures the QR Code remains readable even with a central logo covering part of it.
+   - **Density (Scale):** Control the base dimensions of the QR Code by tweaking this value.
+4. **Logo (Optional):** Click "Escolher arquivo" (Choose file) in the Central Logo section to add your brand. The system supports traditional image formats and `SVG` while preserving transparency and quality.
+5. **Generate:** Click the **GERAR QR CODES** button.
+6. **Preview and Download:** The system will display previews in Vector (SVG) and Image (PNG). Just click the download buttons right below to save the generated files.
 
-## ⚙️ Tecnologias Utilizadas
+## ⚙️ Technologies Used
 
-- **Frontend:** HTML, CSS (com Design Glassmorphism e tipografia Outfit), JavaScript.
+- **Frontend:** HTML, CSS (Glassmorphism Design and Outfit typography), JavaScript.
 - **Backend:** PHP 8.x.
-- **Biblioteca Base:** [chillerlan/php-qrcode](https://github.com/chillerlan/php-qrcode) para o motor de geração de matrizes e renderização nativa.
+- **Core Library:** [chillerlan/php-qrcode](https://github.com/chillerlan/php-qrcode) for the matrix generation engine and native rendering.
 
-## 📋 Requisitos
+## 📋 Requirements
 
-- Servidor web com PHP 7.4 ou superior (Recomendado PHP 8+).
-- Extensão `imagick` ou `gd` (usada como fallback para conversão de matrizes em casos de PNG).
-- Composer (as dependências já devem estar na pasta `vendor/`).
+- Web server with PHP 7.4 or higher (PHP 8+ recommended).
+- `imagick` or `gd` extension (used as a fallback for matrix rasterization into PNG).
+- Composer (dependencies should already be installed in the `vendor/` folder).
